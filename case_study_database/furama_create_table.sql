@@ -1,4 +1,5 @@
-create database if not exists furama_create_table;
+drop database if exists furama_create_table;
+create database furama_create_table;
 use furama_create_table;
 create table vi_tri(
   ma_vi_tri int primary key, 
