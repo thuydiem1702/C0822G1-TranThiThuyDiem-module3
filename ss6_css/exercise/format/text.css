@@ -1,0 +1,46 @@
+h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 35px;
+    line-height: 0.0;
+}
+
+div {
+    width: 600px;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+p {
+    font-family: Arial, serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+sup {
+    color: blue;
+    font-size: 8px;
+}
+
+#hi {
+    font-size: 13px;
+    width: 600px;
+    border-top-style: solid;
+    border-color: darkgrey;
+    border-width: 1px;
+    line-height: 2;
+}
+
+#blue {
+    color: deepskyblue;
+}
+
+
+#black {
+    color: black;
+}

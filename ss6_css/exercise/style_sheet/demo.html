@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .color-green {
+            color: green;
+        }
+
+        .color-blue {
+            color: blue;
+        }
+    </style>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<!--Dùng inline-->
+<h1 style="color: lightcoral">This is heading 1</h1>
+<p style="color: lightseagreen">This is an ordinary paragraph. Notice that this text is blue</p>
+
+<!--Dùng internal-->
+<h1 class="color-green">This is heading 1</h1>
+<p class="color-blue">This is an ordinary paragraph. Notice that this text is blue</p>
+
+<!--Dùng external-->
+<h1 class="color-red">This is heading 1</h1>
+<p class="color-pink">This is an ordinary paragraph. Notice that this text is blue</p>
+
+<!--Cách của Lu Xinh-->
+<h1 id="demo h1">This is heading 1</h1>
+<p id="demo p">This is an ordinary paragraph. Notice that this text is blue</p>
+<button onclick="changeh1()"> Đổi màu tiêu đề</button>
+<button onclick="changep()"> Đổi màu đoạn văn</button>
+<script>
+    function changeh1() {
+        document.getElementById("demo h1").style.color= "green";
+    }
+    function changep() {
+        document.getElementById("demo p").style.color = "blue";
+    }
+</script>
+</body>
+</html>
