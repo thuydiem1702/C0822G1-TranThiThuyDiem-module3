@@ -1,11 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
-<f:view>
-    <h:outputLabel value="Hello, world"/>
-</f:view>
+<%@ page import="java.util.Map" %>
+<%@ page import="java.util.HashMap" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Simple Dictionary</title>
+</head>
+<body>
+<%!
+    Map<String, String> dic = new HashMap<>();
+%>
+
+<%
+    dic.put("hello", "Xin chào");
+    dic.put("how", "Thế nào");
+    dic.put("book", "Quyển vở");
+    dic.put("computer", "Máy tính");
+    String search = request.getParameter("search");
+    String result = dic.get(search);
+    if (result != null) {
+        out.println("Word: " + search);
+        out.println("Result: " + result);
+    } else {
+        out.println("Not found");
+    }
+%>
+
+</body>
 </html>
