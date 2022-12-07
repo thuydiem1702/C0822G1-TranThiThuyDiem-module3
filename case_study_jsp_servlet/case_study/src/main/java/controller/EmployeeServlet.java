@@ -14,7 +14,7 @@ import java.util.List;
 @WebServlet(name = "EmployeeServlet", value = "/employee")
 public class EmployeeServlet extends HttpServlet {
     private IEmployeeService iEmployeeService = new EmployeeService();
-    private IPositionService iPositionSercive = new PositionService();
+    private IPositionService iPositionService = new PositionService();
     private IEducationDegreeService iEducationDegreeService = new EducationDegreeService();
     private IDivisionService iDivisionService = new DivisionService();
 
@@ -49,7 +49,7 @@ public class EmployeeServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/employee/list.jsp");
 
         List<Employee> employeeList = iEmployeeService.findAll();
-        List<Position> positionList = iPositionSercive.findAll();
+        List<Position> positionList = iPositionService.findAll();
         List<EducationDegree> educationDegreeList = iEducationDegreeService.findAll();
         List<Division> divisionList = iDivisionService.findAll();
 
@@ -78,7 +78,7 @@ public class EmployeeServlet extends HttpServlet {
         String phone = request.getParameter("phoneSearch");
 
         List<Employee> employeeList = iEmployeeService.search(name, address, phone);
-        List<Position> positionList = iPositionSercive.findAll();
+        List<Position> positionList = iPositionService.findAll();
         List<EducationDegree> educationDegreeList = iEducationDegreeService.findAll();
         List<Division> divisionList = iDivisionService.findAll();
 
@@ -113,7 +113,7 @@ public class EmployeeServlet extends HttpServlet {
 
     private void showEditForm(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
-        List<Position> positionList = iPositionSercive.findAll();
+        List<Position> positionList = iPositionService.findAll();
         List<EducationDegree> educationDegreeList = iEducationDegreeService.findAll();
         List<Division> divisionList = iDivisionService.findAll();
         Employee employee = iEmployeeService.findById(id);
@@ -142,7 +142,7 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void showCreateForm(HttpServletRequest request, HttpServletResponse response) {
-        List<Position> positionList = iPositionSercive.findAll();
+        List<Position> positionList = iPositionService.findAll();
         List<EducationDegree> educationDegreeList = iEducationDegreeService.findAll();
         List<Division> divisionList = iDivisionService.findAll();
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/employee/create.jsp");
