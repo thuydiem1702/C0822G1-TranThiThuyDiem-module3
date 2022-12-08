@@ -15,11 +15,11 @@
     <title>Update Employee</title>
     <style>
         body {
-            background-image: url("https://cdn.wallpapersafari.com/97/50/eRwDMy.jpg");
+            background-image: url("https://genk.mediacdn.vn/2019/7/25/anh-4-1564031771566921051818.jpg");
         }
 
         form {
-            background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v960-ning-30.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=63dd5f402645ef52fb7dfb592aec765a");
+            background-image: url("https://ss-images.saostar.vn/2019/07/23/5681299/page1.jpg");
         }
 
         a {

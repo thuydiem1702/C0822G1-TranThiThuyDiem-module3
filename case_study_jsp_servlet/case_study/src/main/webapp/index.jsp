@@ -56,7 +56,7 @@
           <!--DropDowns-->
           <div>
             <button type="button" class="btn btn-close-white">
-              <a href="https://github.com/thuydiem1702/C0822G1-TranThiThuyDiem-module3/tree/main/case_study_jsp_servlet">Home</a>
+              <a href="/index.jsp">Home</a>
             </button>
           </div>
           <!--DropDowns2-->
@@ -72,7 +72,7 @@
           </div>
           <div class="btn-group" style="margin-left: 30px">
             <button type="button" class="btn btn-close-white">
-              <a href="/service">Service</a>
+              <a href="/facility">Service</a>
             </button>
           </div>
           <div class="btn-group" style="margin-left: 30px">
@@ -91,16 +91,7 @@
     </nav>
   </div>
   <div class="row" style="height: 90%; margin-top: 5%">
-    <div class="col-md-2">
-      <ul class="list-group vh-100 overflow-scroll" style="border: 1px solid">
-        <li class="list-group-item" aria-current="true">An active item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
-      </ul>
-    </div>
-    <div class="col-md-10">
+    <div class="col-md-12">
       <div class="row">
         <img src="https://media.baodautu.vn/Images/ngoctan/2017/08/29/Furama_Resort_Danang_-_Ocean_Pool_2.JPG">
       </div>
