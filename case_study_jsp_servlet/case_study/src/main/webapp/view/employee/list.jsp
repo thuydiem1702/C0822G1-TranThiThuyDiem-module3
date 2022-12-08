@@ -62,7 +62,7 @@
         <div class="container-fluid">
             <a href="/employee?action=create">
                 <button class="btn btn-success btn-outline-secondary btn-sm">
-                    <span class="fa-solid fa-person-circle-plus text-light h5 my-auto me-1"></span>
+                    <span class="fa-solid fa-plus text-light h6 my-auto me-1"></span>
                     <span class="text-light"> Add new Eployee</span>
                 </button>
             </a>

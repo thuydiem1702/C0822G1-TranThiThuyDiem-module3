@@ -72,7 +72,7 @@
     <table id="contractTable" class="table table-light table-striped table-bordered">
         <thead>
         <tr class="table-dark text-light">
-            <th class="text-center"><i class="fa-solid fa-dog"></i></th>
+            <th class="text-center"><i class="fa-solid fa-cat"></i></th>
             <th>Facility</th>
             <th>Employee</th>
             <th>Customer</th>

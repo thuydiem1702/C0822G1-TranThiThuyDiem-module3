@@ -62,7 +62,7 @@
         <div class="container-fluid">
             <a href="/facility?action=create">
                 <button class="btn btn-success btn-outline-secondary btn-sm">
-                    <span class="fa-solid fa-house-medical text-light h5 my-auto me-1"></span>
+                    <span class="fa-solid fa-plus text-light h6 my-auto me-1"></span>
                     <span class="text-light"> Add new Facility</span>
                 </button>
             </a>
@@ -159,7 +159,7 @@
                 <td class="text-center">
                     <a href="/facility?action=edit&id=${facility.facilityId}">
                         <button class="btn btn-primary btn-outline-secondary btn-sm">
-                            <span class="fa-solid fa-house-circle-exclamation text-light h6 m-auto px-2"></span>
+                            <span class="fa-solid fa-user-pen text-light text-light h6 m-auto px-2"></span>
                         </button>
                     </a>
                 </td>
@@ -168,7 +168,7 @@
                        data-bs-target="#exampleModal"
                        onclick="deleteFacility('${facility.getFacilityId()}','${facility.getFacilityName()}')">
                         <button class="btn btn-danger btn-outline-secondary btn-sm">
-                            <span class="fa-solid fa-house-circle-xmark text-light h6 m-auto px-2"></span>
+                            <span class="fa-solid fa-person-circle-minus text-light h6 m-auto px-2"></span>
                         </button>
                     </a>
                 </td>
