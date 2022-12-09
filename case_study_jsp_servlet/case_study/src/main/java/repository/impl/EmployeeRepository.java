@@ -39,7 +39,7 @@ public class EmployeeRepository implements IEmployeeRepository {
                 String employeeName = resultSet.getString("employee_name");
                 String employeeBirthday = resultSet.getString("employee_day_of_birth");
                 String employeeIdCard = resultSet.getString("employee_id_card");
-                double employeeSalary = resultSet.getInt("employee_salary");
+                double employeeSalary = resultSet.getDouble("employee_salary");
                 String employeePhone = resultSet.getString("employee_phone_number");
                 String employeeEmail = resultSet.getString("employee_email");
                 String employeeAddress = resultSet.getString("employee_address");

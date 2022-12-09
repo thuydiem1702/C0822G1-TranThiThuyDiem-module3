@@ -63,7 +63,7 @@
             <a href="/employee?action=create">
                 <button class="btn btn-success btn-outline-secondary btn-sm">
                     <span class="fa-solid fa-plus text-light h6 my-auto me-1"></span>
-                    <span class="text-light"> Add new Eployee</span>
+                    <span class="text-light"> Add new Employee</span>
                 </button>
             </a>
 
@@ -106,7 +106,7 @@
                 <td>${employee.employeeName}</td>
                 <td>${employee.employeeBirthday}</td>
                 <td>${employee.employeeIdCard}</td>
-                <td>₫${String.format("%.0f", employee.employeeSalary)}</td>
+                <td>₫${String.format(employee.employeeSalary)}</td>
                 <td>${employee.employeePhone}</td>
                 <td>${employee.employeeEmail}</td>
                 <td>${employee.employeeAddress}</td>
@@ -195,12 +195,13 @@
         document.getElementById("idDelete").value = id;
         document.getElementById("nameDelete").innerText = name;
     }
-</script>
 
-<script src="jquery/jquery-3.5.1.min.js"></script>
-<script src="datatables/js/jquery.dataTables.min.js"></script>
-<script src="datatables/js/dataTables.bootstrap4.min.js"></script>
-<script>
+    <%--</script>--%>
+
+    <%--<script src="jquery/jquery-3.5.1.min.js"></script>--%>
+    <%--<script src="datatables/js/jquery.dataTables.min.js"></script>--%>
+    <%--<script src="datatables/js/dataTables.bootstrap4.min.js"></script>--%>
+    <%--<script>--%>
     $(document).ready(function () {
         $('#employeeTable').dataTable({
             "dom": 'lrtip',
@@ -216,3 +217,4 @@
         crossorigin="anonymous">
 </script>
 </html>
+
